@@ -92,8 +92,14 @@ menu = '''|    1      | - go to a folder
 |    4      | - open file
 |    exit   | - to exit '''
 
+go_down_menu = ''' Chose an option: 
+ up - to go up
+ down - to go down'''
 
-
+go_down_chose = ''' Chose an option:
+ full - for full path
+ short - for short path
+ 0 - to go back'''
 
 """ SECONDARY FUNCTION ----------------------------------"""
 
@@ -119,14 +125,13 @@ def main():
         option = input(' print choosen option: ').strip()
 
         if option == '1':
-            print(' up - for go up or - down - for go down')
-            option_1 = input().strip()
+            print(go_down_menu)
+            option_1 = input('Your option: ').strip()
             if option_1 == 'up':
                 go_up()
             elif option_1 == 'down':
-                print(' full - for full path or short - for short ')
-                print(' 0 - back')
-                option_2 = input().strip()
+                print(go_down_chose)
+                option_2 = input('Your option: ').strip()
 
                 if option_2 == 'full':
                     path = input(' Give me a path: ').strip()

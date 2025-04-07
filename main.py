@@ -4,13 +4,7 @@ import subprocess
 import platform
 import functions
 
-
-
 width = shutil.get_terminal_size().columns
-
-""" PRIMARY FUNCTION ====================================================== """
-
-""" PRINTED BLOKS ---------------------------------------"""
 
 menu = '''|    1      | - go to a folder 
 |    2      | - make a folder 
